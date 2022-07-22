@@ -1,7 +1,7 @@
 const app = Vue.createApp({
   data() {
     return {
-      counter: 0,
+      counter: 10,
       name: ""
     };
   },
@@ -14,6 +14,9 @@ const app = Vue.createApp({
     },
     setName(event) {
       this.name = event.target.value;
+    },
+    submitForm() {
+      alert('Submitted');
     } 
   }
 });
